@@ -79,14 +79,6 @@ cbar.set_label('Color Bar')
 # Hide the axis
 ax.set_axis_off()
 
-#Assign value to hex color
-#SHOW THIS IN VIDEO
-for i in df_values:
-      color_for_value = cmap(norm(i))
-      marker_color = mcolors.to_hex(color_for_value, keep_alpha=False)  #puts the color into hex format, without the a-Value for transparency
-      #st.write(marker_color)
-
-
 # 3. MAP--------------------------------------------------------
 #Creates a map that centers at "location=", with a zoom of "zoom_start" and a scale bar
       #could add: tiles='Stamen Terrain' to show a terrain map but the attribution is broken
